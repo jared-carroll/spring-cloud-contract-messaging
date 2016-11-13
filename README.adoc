@@ -1,0 +1,19 @@
+= Spring Cloud Contract Messaging
+
+== Producer
+
+Generate and run contract tests
+
+  ./gradlew producer:build
+
+Publish contracts to Maven local (~/.m2)
+
+  ./gradlew producer:publishToMavenLocal
+
+== Consumer
+
+Run consumer tests against generated messaging stubs
+
+  ./gradlew consumer:test
+
+Consumer tests are setup to work offline and download stubs from Maven local (~/.m2).
